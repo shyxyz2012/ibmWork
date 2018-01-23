@@ -1,0 +1,140 @@
+@charset "UTF-8";
+@mixin ell($num){
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp:$a;
+  line-clamp:$a;
+}
+*{
+  padding: 0;
+  margin: 0;
+}
+body,html{
+  height: 100%;
+}
+
+//当宽度小于580时，大图片部分的变化
+.ibmNavRight{
+  .searchAll{
+    ul{
+      li{
+        line-height: 30px;
+      }
+    }
+  }
+  p,input{
+    display: none;
+  }
+  .search{
+    border-left: none;
+  }
+}
+#bigImg{
+  width: 100%;
+  background: #000;
+  img{
+    width: 85%;
+    height: 30%;
+    position: absolute;
+    top: 30px;
+    left: 25px;
+    //margin: 30px auto;
+  }
+  .englishText{
+    bottom: -100px;
+    width: 280px;
+    left: 25px;
+    h2{
+      font-size: 28px;
+    }
+  }
+}
+
+//.ibmNavLeft ul{
+//  display: none;
+//}
+#thisWeek div{
+  width: 90%;
+  margin: 40px 5%;
+}
+
+#explore div{
+  width: 90%;
+  margin: 40px 5%;
+}
+
+#inside div{
+  width: 100%;
+}
+
+#manyType div{
+  width: 90%;
+  margin: 0 5%;
+}
+#caseStudy div{
+  width: 100%;
+}
+#help div{
+  width: 100%;
+}
+#discover .discoverAll div{
+  width: 100%;
+  .ulOne{
+    float: left;
+  }
+  .ulTwo{
+    float: right;
+  }
+}
+
+#caseStudy{
+  display: flex;
+  flex-direction: column;
+  .studyOne{
+    width: 100%;
+    img{
+      display: block;
+      margin: 30px auto;
+    }
+  }
+  .studyTwo{
+    display: none;
+  }
+}
+@media screen and (max-width: 580px){
+  #ibmFooter{
+    .footerAll{
+      div{
+        h3{
+          padding: 0 0 30px 0;
+        }
+      }
+    }
+  }
+  #ibmFooter{
+    .footerAll{
+      div{
+        width: 100%;
+        float: none;
+      }
+    }
+    .footerLast{
+      display: flex;
+      flex-direction: column;
+      float: none;
+      .fLastTwo{
+        padding: 20px 0 0 0;
+      }
+    }
+  }
+}
+
+#ibmNav .ibmNavIn .hideMarketPlace .marketPlace{
+  width: 100%;
+}
+
+//@media screen and (max-width: 600px){
+//
+//}

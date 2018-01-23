@@ -1,0 +1,53 @@
+@charset "UTF-8";
+@mixin ell($num){
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp:$a;
+  line-clamp:$a;
+}
+*{
+  padding: 0;
+  margin: 0;
+}
+body,html{
+  height: 100%;
+}
+
+.ibmNavLeft ul{
+  display: none;
+}
+//1050
+#thisWeek div{
+    width: 46%;
+}
+
+#explore div{
+  width: 46%;
+}
+
+#inside div{
+  width: 50%;
+}
+
+#manyType div{
+  width: 50%;
+}
+
+#caseStudy{
+  .studyOne{
+    .studyContain{
+      .containOne{
+        width: 100%;
+        margin: 40px auto;
+        float: none;
+      }
+      .containTwo{
+        width: 100%;
+        margin:40px auto;
+        float: none;
+      }
+    }
+  }
+}
